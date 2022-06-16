@@ -63,3 +63,78 @@ html {
 .menu_hamburguer {
   display: none;
 }
+footer {
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif; 
+    margin: 0;
+}
+
+.Time {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+}
+
+.Aluno_contato {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 15px;
+    color: white
+}
+h3{
+    margin: 1px;
+    font-weight: 350;
+    font-size: 20px;
+}
+
+h3:hover{
+    color: rgb(0, 195, 255);    
+    text-transform: uppercase;
+    font-size: x-large;
+}
+
+h5{
+    margin: 5px 0 25px 0;
+    font-weight: 80;
+}
+.icones{   
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+    justify-content: space-between;    
+}
+
+.desenvolvido {
+    color: rgba(226, 226, 226, 0.829);    
+    flex-direction: flex;
+    text-align: center;
+    font-size: 25px;
+}
+
+.desenvolvido:hover{
+    color: rgb(0, 195, 255);    
+    text-transform: uppercase;
+    font-size:xx-large;
+}
+
+@media screen and (max-width: 760px) {
+    .Time {
+      flex-direction: column;      
+    }
+
+    .Aluno_contato {
+        font-size: 14px;
+    }
+
+    .desenvolvido {
+        font-size: 15px;
+    }
+
+    .desenvolvido:hover{
+       font-size: 15px;
+       text-transform: uppercase;
+    }
+}
