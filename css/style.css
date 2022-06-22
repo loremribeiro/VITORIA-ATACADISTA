@@ -7,7 +7,7 @@
 
   font-family: "Roboto", sans-serif;
 
-  --azul_escuro: #3e4095;
+  --azul_escuro: rgb(1, 1, 163);
   --azul_claro: #00aff0;
 }
 
@@ -22,7 +22,7 @@ html {
   padding: 3px;
   width: 100%;
   height: 10vh;
-  background-color: black;
+  background-color: white;
 }
 
 .logo_empresa {
@@ -57,14 +57,49 @@ html {
 }
 
 #home {
-  color: white;
+  color: black;
 }
 
 .menu_hamburguer {
   display: none;
 }
+
+.banner {
+  width: 100%;
+  height: 90vh;
+
+  background: linear-gradient(rgba(1, 1, 163, 0.7), rgba(1, 1, 163, 0.7)),
+    url("../img/banner.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  color: white;
+
+  gap: 20px;
+}
+
+.banner h1 {
+  font-size: 2rem;
+}
+
+button {
+  color: white;
+  font-size: 1.1rem;
+  width: 200px;
+  height: 50px;
+  background: rgba(51, 53, 187, 0.05);
+  border: 1px solid var(--azul_claro);
+  border-radius: 12px;
+}
 footer {
-  background-color: black;
+  background-color: white;
   font-family: "Times New Roman", Times, serif;
   margin: 0;
 }
@@ -74,7 +109,7 @@ footer {
   padding: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .Aluno_contato {
@@ -84,14 +119,22 @@ footer {
   font-size: 15px;
   color: var(--azul_escuro);
 }
-h3 {
+.Aluno_contato h3 {
   margin: 1px;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.3rem;
+}
+
+#guilherme {
+  text-align: start;
+}
+
+#soraia {
+  text-align: end;
 }
 
 h3:hover {
-  color: white;
+  color: black;
   text-transform: uppercase;
   font-size: x-large;
 }
@@ -101,7 +144,7 @@ h5 {
   font-weight: bold;
 }
 .icones i {
-  color: #3e4095;
+  color: var(--azul_escuro);
   margin: 0;
   padding: 0;
   font-size: 35px;
@@ -112,11 +155,11 @@ h5 {
   color: var(--azul_escuro);
   flex-direction: flex;
   text-align: center;
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 
 .desenvolvido:hover {
-  color: white;
+  color: black;
   text-transform: uppercase;
   font-size: xx-large;
 }
