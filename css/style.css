@@ -165,6 +165,19 @@ h5 {
 }
 
 @media screen and (max-width: 760px) {
+  .menu {
+    display: none;
+  }
+
+  .menu_hamburguer {
+    background-color: var(--azul_escuro);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
   .Time {
     flex-direction: column;
   }
