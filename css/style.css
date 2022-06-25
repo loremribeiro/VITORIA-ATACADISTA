@@ -98,6 +98,120 @@ button {
   border: 1px solid var(--azul_claro);
   border-radius: 12px;
 }
+
+
+
+.container-cards{  
+  background-color: rgba(122, 197, 254, 0.322);  
+
+  display: grid;
+    
+  grid-template-rows: (1fr 3fr 3fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;  
+  justify-content: center;
+  align-items: center;
+  
+  grid-template-areas:
+  "Legenda Legenda Legenda"
+  "Loja1 Loja2 Loja3"
+  "Loja4 Loja5 Loja6";      
+}
+
+.Leg_lojas{
+  grid-area: Legenda;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgba(20, 20, 20, 0.699);
+}
+
+.container-loja_Dormentes{
+    grid-area: Loja1;
+    margin: 25px;
+    border: 2px solid rgba(235, 226, 226, 0.377);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+      
+}
+
+.container-loja_Juazeiro{
+  grid-area: Loja2;
+  margin: 25px;
+  border: 2px solid rgba(235, 226, 226, 0.377);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;  
+}
+
+.container-loja_Petrolina{
+  grid-area: Loja3;
+   border: 2px solid rgba(235, 226, 226, 0.377);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;   
+}
+
+.container-loja_Picos{
+  grid-area: Loja4;
+  border: 2px solid rgba(235, 226, 226, 0.377);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+}
+
+.container-loja_Araripina{
+  grid-area: Loja5;
+  border: 2px solid rgba(235, 226, 226, 0.377);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;  
+}
+
+.container-loja_Raimundo{
+  grid-area: Loja6;
+  border: 2px solid rgba(235, 226, 226, 0.377);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+}
+
+.imagem-loja{
+  border-radius: 15px;
+  border: 2px;  
+}
+
+.button__loja{
+  color: blue;
+  font-size: 1.1rem;
+  width: 200px;
+  height: 50px;
+  background: rgba(51, 53, 187, 0.05);
+  border: 1px solid var(--azul_claro);
+  border-radius: 12px;
+}
+
+
+
 footer {
   background-color: white;
   font-family: "Times New Roman", Times, serif;
@@ -164,6 +278,20 @@ h5 {
   font-size: xx-large;
 }
 
+@media screen and (max-width: 1280px){
+  .container-cards{ 
+    
+    padding-left: 15%;
+
+    grid-template-areas:
+    "Legenda Legenda"
+    "Loja1 Loja2"
+    "Loja3 Loja4"
+    "Loja5 Loja6";      
+  }
+
+}
+
 @media screen and (max-width: 760px) {
   .menu {
     display: none;
@@ -178,6 +306,23 @@ h5 {
     margin-right: 10px;
     margin-top: 10px;
   }
+  
+.container-cards{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;    
+  text-align: center;       
+}
+
+
+.Aluno_contato {    
+  font-size: 8px; 
+  align-items: center;
+  justify-content: center;
+  text-align: center; 
+}
+  
   .Time {
     flex-direction: column;
   }
@@ -194,4 +339,59 @@ h5 {
     font-size: 15px;
     text-transform: uppercase;
   }
+}
+
+@media screen and (max-width: 480px) {
+    /*celular*/
+  
+  .menu {
+    display: none;
+  }
+
+  .menu_hamburguer {
+    background-color: var(--azul_escuro);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+  .Time {
+    flex-direction: column;    
+  }
+
+  .Aluno_contato {    
+    font-size: 8px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+  }
+
+  .desenvolvido {
+    font-size: 14px;
+  }
+
+  .desenvolvido:hover {
+    font-size: 8px; 
+    text-transform: uppercase;
+  }
+
+.container-cards{  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;    
+  text-align: center;  
+}
+
+.Leg_lojas{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgba(20, 20, 20, 0.699);
+}
 }
