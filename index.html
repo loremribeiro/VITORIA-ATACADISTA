@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/9dee7e9fe4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css" />
     <title>VITÓRIA ATACADISTA</title>
   </head>
@@ -26,7 +31,10 @@
             </li>
 
             <li>
-              <a href="">Login</a>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Login
+              </button>
+              
             </li>
           </ul>
         </nav>
@@ -38,7 +46,148 @@
       </div>
     </header>
     <main>
-      <section class="banner"></section>
+      <section class="banner">
+          <div>
+            <h1>Vitória Atacadista</h1>
+            <p>Conheça nossas lojas e descubra o seu maior parceiro mais próximo</p>
+          </div>
+          <a href="">
+            <button name="button">Explorar</button>
+          </a>
+      </section>
+
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="login">
+                <img src="./img/logotipoVITORIA.png" />
+                
+                <form action="" method="post">
+                  <div>
+                  <label for="email">email</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Insira seu endereço de email"
+                    required
+                  />
+                  </div>
+          
+                  <div>
+                    <label for="senha">senha</label>
+                    <input
+                    type="password"
+                    name="senha"
+                    id="senha"
+                    placeholder="Insira sua senha"
+                    required
+                    />
+                  </div>
+            </div>
+            <div class="modal-footer">
+              <div class="botoes">
+                <input type="reset" value="Limpar" />
+                <input type="submit" value="Enviar" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+  
+      <section class="Lojas">
+
+       
+          <div class="container-cards">
+           
+            <H1 class="Leg_lojas">Lojas</H1>
+            
+            <div class="container loja_Dormentes">
+              <img class="imagem-loja" src="./img/Dormentes - PE - Loja.png" alt="Imagem da Matriz - Dormentes"><hr>              
+              <button class="button__loja">Abrir</button>
+            </div>
+            
+            <div class="container loja_Juazeiro">
+              <img class="imagem-loja" src="./img/Juazeiro - BA - Loja.png" alt="Imagem da Filial - Juazeiro"><hr>
+              <button class="button__loja">Abrir</button>
+            </div>
+            
+            <div class="container loja_Petrolina">
+              <img class="imagem-loja" src="./img/Petrolina - PE - Loja.png" alt="Imagem da Filial - Petrolina"><hr>
+              <button class="button__loja">Abrir</button>
+            </div>
+            
+            <div class="container loja_Picos">
+              <img class="imagem-loja" src="./img/Picos - PI - Loja.png" alt="Imagem da Filial - Picos"><hr>
+              <button class="button__loja">Abrir</button>
+            </div>
+            
+            <div class="container loja_Araripina">
+              <img class="imagem-loja" src="./img/Araripina - PE - Loja.png" alt="Imagem da Filial - Araripina"><hr>
+              <button class="button__loja">Abrir</button>
+            </div>
+            
+            <div class="container loja_Raimundo">
+              <img class="imagem-loja" src="./img/São Raimundo Nonato - PI - Loja.png" alt="Imagem da Filial - São Raimundo Nonato"><hr>
+              <button class="button__loja">Abrir</button>
+            </div>
+          </div>            
+      </section>
+
+        
     </main>
+    <footer>              
+        <div class="Alunos_Contatos_Desenvolvimento">
+            <div class="Time">
+                <div class="Aluno_contato">
+                    <h3 id="guilherme">Guilherme Alencar</h3>
+                    <h5>Responsável pelo desenvimento de ...</h5>
+                    <div class="icones">
+                        <a href="https://www.linkedin.com/in/guilhermeolialen/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/guiolialen"target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="Aluno_contato">
+                    <h3>Iago Dias Maciel</h3>
+                    <h5>Responsável pelo desenvimento de ...</h5>
+                    <div class="icones">
+                      <a href="https://www.linkedin.com/in/iago-dias-maciel-a31077177/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/iagoDiasMaciel"target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="Aluno_contato">
+                    <h3 id="soraia">Soraia L. R. França</h3>
+                    <h5>Responsável pelo desenvimento de ...</h5>
+                    <div class="icones">
+                        <a href="https://www.linkedin.com/in/soraia-fran%C3%A7a-57a2b139/"target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/loremribeiro"target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </div>                
+            </div>
+            <div class="desenvolvido">
+                <span> Checkpoint II - Desenvolvido em Junho de 2022 </span>  
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
+
