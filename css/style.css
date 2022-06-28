@@ -9,6 +9,9 @@
 
   --azul_escuro: rgb(1, 1, 163);
   --azul_claro: #00aff0;
+  --azul_claro2: #8dd1ecc0;
+  --br: white;
+  
 }
 
 html {
@@ -99,72 +102,137 @@ button {
   border-radius: 12px;
 }
 
-.container-cards{ 
-  background-color: #b2ddecd5;
-  display: grid;
-  grid-template-rows: (20%, 40%, 40%);
-  grid-template-columns: repeat(3, 1fr);
-      
-  grid-template-areas:
-    "linha_1 linha_1 linha_1"
-    "linha_2_1 linha_2_2 linha_2_3"
-    "linha_3_1 linha_3_2 linha_3_3";
-  }
-
-.Leg_lojas{ 
-  grid-area: linha_1;
-  }
-
-.loja_Dormentes{
-  grid-area: linha_2_1;
-}
-
-.loja_Juazeiro{
-  grid-area: linha_2_2;
-}
-
-.loja_Petrolina{
-  grid-area: linha_2_3;
-}
-
-.loja_Picos{
-  grid-area: linha_3_1;
-}
-
-.loja_Araripina{
-  grid-area: linha_3_2;
-}
-
-.loja_Raimundo{
-  grid-area: linha_3_3;
+.Lojas{
+  padding-bottom: 10px;
+  background-color:var(--azul_claro2);
 }
 
 .Leg_lojas{
- text-align: center;
- margin: 10px;
- padding: 15px;
- font-size: 3rem;
-
+  font-size: 3rem;
+  text-align: center;
+  color:var(--br);
 }
 
-.container{
-  width: auto;
-  padding: 15px;
+.container-cards {
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 170px;
+}
+
+.card{
+  width: 374px;
+  height: 580px;
+
+  background-color: var(--card-background);
+  border-radius: 30px;
+
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
+  box-shadow: 0px 7px 6px -1px rgba(0, 0, 0, 0.47);
+}
+
+.card__img-background {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.loja_Dormentes {
+  background-image: url("../img/Dormentes\ -\ PE\ -\ Loja.png");
+  background-repeat: no-repeat;
+  background-color: cover;
+}
+
+.loja_Juazeiro {
+  background-image: url("../img/Juazeiro\ -\ BA\ -\ Loja.png");
+  background-repeat: no-repeat;
+  background-color: cover;
+}
+
+.loja_Petrolina {
+  background-image: url("../img/Petrolina\ -\ PE\ -\ Loja.png");
+  background-repeat: no-repeat;
+  background-color: cover;
+}
+
+.loja_Araripina {
+  background-image: url("../img/Araripina\ -\ PE\ -\ Loja.png");
+  background-repeat: no-repeat;
+  background-color: cover;
+}
+
+.loja_Picos {
+  background-image: url("../img/Picos\ -\ PI\ -\ Loja.png");
+  background-repeat: no-repeat;
+  background-color: cover;
+}
+
+.loja_Raimundo {
+  background-image: url("../img/São\ Raimundo\ Nonato\ -\ PI\ -\ Loja.png");
+  background-repeat: no-repeat;
+  background-color: cover;
+}
+
+.card__icone {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.card__img-user img {
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  left: 115px;
+  top: 130px;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;  
+  gap: 10px;
+  flex-grow: 1; /*inclui o flex-grow e removi o header*/
+  margin-top: 50px;
+  
 }
 
-.imagem-loja {
-  border-radius: 30px;
+.card__desc {
+  margin: 10px 20px;  
+  flex-grow: 1;
+  text-align: center;
+
 }
 
-.button__loja{
-  color: blue; 
-}
+.card__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  background-color: var(--azul_escuro);
+  text-decoration: none;
+  border-radius: 50px;
+
+  width: 150px;
+  height: 40px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #f3f3f3;
+
+  margin: 15px;
+}
 
 footer {
   background-color: white;
@@ -248,75 +316,7 @@ h5 {
     align-items: center;
     margin-right: 10px;
     margin-top: 10px;
-  }
-
-
-  .container-cards{ 
-    background-color: #b2ddecd5;
-    display: grid;
-    grid-template-rows: (20%, 40%, 40%);
-    grid-template-columns: repeat(2, 1fr);
-        
-    grid-template-areas:
-      "linha_1 linha_1"
-      "linha_2_1 linha_2_2"
-      "linha_2_3 linha_3_1 linha_3_2 linha_3_3";
-    }
-  
-  .Leg_lojas{ 
-    grid-area: linha_1;
-    }
-  
-  .loja_Dormentes{
-    grid-area: linha_2_1;
-  }
-  
-  .loja_Juazeiro{
-    grid-area: linha_2_2;
-  }
-  
-  .loja_Petrolina{
-    grid-area: linha_2_3;
-  }
-  
-  .loja_Picos{
-    grid-area: linha_3_1;
-  }
-  
-  .loja_Araripina{
-    grid-area: linha_3_2;
-  }
-  
-  .loja_Raimundo{
-    grid-area: linha_3_3;
-  }
-  
-  .Leg_lojas{
-   text-align: center;
-   margin: 10px;
-   padding: 15px;
-   font-size: 3rem;
-  
-  }
-  
-  .container{
-    width: auto;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;  
-  }
-  
-  .imagem-loja {
-    border-radius: 30px;
-  }
-  
-  .button__loja{
-    color: blue; 
-  }
-  
+  } 
 
   .Time {
     flex-direction: column;    
@@ -340,18 +340,4 @@ h5 {
     text-transform: uppercase;
   }
 
-.container-cards{  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;    
-  text-align: center;  
-}
-
-.Leg_lojas{
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: rgba(20, 20, 20, 0.699);
-}
 }
