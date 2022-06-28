@@ -99,72 +99,70 @@ button {
   border-radius: 12px;
 }
 
-.container-cards{ 
+.container-cards {
   background-color: #b2ddecd5;
   display: grid;
   grid-template-rows: (20%, 40%, 40%);
   grid-template-columns: repeat(3, 1fr);
-      
+
   grid-template-areas:
     "linha_1 linha_1 linha_1"
     "linha_2_1 linha_2_2 linha_2_3"
     "linha_3_1 linha_3_2 linha_3_3";
-  }
+}
 
-.Leg_lojas{ 
+.Leg_lojas {
   grid-area: linha_1;
-  }
+}
 
-.loja_Dormentes{
+.loja_Dormentes {
   grid-area: linha_2_1;
 }
 
-.loja_Juazeiro{
+.loja_Juazeiro {
   grid-area: linha_2_2;
 }
 
-.loja_Petrolina{
+.loja_Petrolina {
   grid-area: linha_2_3;
 }
 
-.loja_Picos{
+.loja_Picos {
   grid-area: linha_3_1;
 }
 
-.loja_Araripina{
+.loja_Araripina {
   grid-area: linha_3_2;
 }
 
-.loja_Raimundo{
+.loja_Raimundo {
   grid-area: linha_3_3;
 }
 
-.Leg_lojas{
- text-align: center;
- margin: 10px;
- padding: 15px;
- font-size: 3rem;
-
+.Leg_lojas {
+  text-align: center;
+  margin: 10px;
+  padding: 15px;
+  font-size: 3rem;
 }
 
-.container{
+.container {
   width: auto;
   padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
 }
 
 .imagem-loja {
   border-radius: 30px;
 }
 
-.button__loja{
-  color: blue; 
+.button__loja {
+  color: blue;
 }
-
 
 footer {
   background-color: white;
@@ -191,14 +189,6 @@ footer {
   margin: 1px;
   font-weight: bold;
   font-size: 1.3rem;
-}
-
-#guilherme {
-  text-align: start;
-}
-
-#soraia {
-  text-align: end;
 }
 
 h3:hover {
@@ -232,10 +222,9 @@ h5 {
   font-size: xx-large;
 }
 
-
 @media screen and (max-width: 480px) {
-    /*celular*/
-  
+  /*celular*/
+
   .menu {
     display: none;
   }
@@ -250,85 +239,82 @@ h5 {
     margin-top: 10px;
   }
 
-
-  .container-cards{ 
+  .container-cards {
     background-color: #b2ddecd5;
     display: grid;
     grid-template-rows: (20%, 40%, 40%);
     grid-template-columns: repeat(2, 1fr);
-        
+
     grid-template-areas:
       "linha_1 linha_1"
       "linha_2_1 linha_2_2"
       "linha_2_3 linha_3_1 linha_3_2 linha_3_3";
-    }
-  
-  .Leg_lojas{ 
+  }
+
+  .Leg_lojas {
     grid-area: linha_1;
-    }
-  
-  .loja_Dormentes{
+  }
+
+  .loja_Dormentes {
     grid-area: linha_2_1;
   }
-  
-  .loja_Juazeiro{
+
+  .loja_Juazeiro {
     grid-area: linha_2_2;
   }
-  
-  .loja_Petrolina{
+
+  .loja_Petrolina {
     grid-area: linha_2_3;
   }
-  
-  .loja_Picos{
+
+  .loja_Picos {
     grid-area: linha_3_1;
   }
-  
-  .loja_Araripina{
+
+  .loja_Araripina {
     grid-area: linha_3_2;
   }
-  
-  .loja_Raimundo{
+
+  .loja_Raimundo {
     grid-area: linha_3_3;
   }
-  
-  .Leg_lojas{
-   text-align: center;
-   margin: 10px;
-   padding: 15px;
-   font-size: 3rem;
-  
+
+  .Leg_lojas {
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    font-size: 3rem;
   }
-  
-  .container{
+
+  .container {
     width: auto;
     padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
   }
-  
+
   .imagem-loja {
     border-radius: 30px;
   }
-  
-  .button__loja{
-    color: blue; 
+
+  .button__loja {
+    color: blue;
   }
-  
 
   .Time {
-    flex-direction: column;    
+    flex-direction: column;
   }
 
-  .Aluno_contato {    
-    font-size: 8px; 
+  .Aluno_contato {
+    font-size: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center; 
+    text-align: center;
   }
 
   .desenvolvido {
@@ -336,22 +322,22 @@ h5 {
   }
 
   .desenvolvido:hover {
-    font-size: 8px; 
+    font-size: 8px;
     text-transform: uppercase;
   }
 
-.container-cards{  
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;    
-  text-align: center;  
-}
+  .container-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
-.Leg_lojas{
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: rgba(20, 20, 20, 0.699);
-}
+  .Leg_lojas {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgba(20, 20, 20, 0.699);
+  }
 }
