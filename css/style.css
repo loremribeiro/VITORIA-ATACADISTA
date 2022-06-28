@@ -98,6 +98,74 @@ button {
   border: 1px solid var(--azul_claro);
   border-radius: 12px;
 }
+
+.container-cards{ 
+  background-color: #b2ddecd5;
+  display: grid;
+  grid-template-rows: (20%, 40%, 40%);
+  grid-template-columns: repeat(3, 1fr);
+      
+  grid-template-areas:
+    "linha_1 linha_1 linha_1"
+    "linha_2_1 linha_2_2 linha_2_3"
+    "linha_3_1 linha_3_2 linha_3_3";
+  }
+
+.Leg_lojas{ 
+  grid-area: linha_1;
+  }
+
+.loja_Dormentes{
+  grid-area: linha_2_1;
+}
+
+.loja_Juazeiro{
+  grid-area: linha_2_2;
+}
+
+.loja_Petrolina{
+  grid-area: linha_2_3;
+}
+
+.loja_Picos{
+  grid-area: linha_3_1;
+}
+
+.loja_Araripina{
+  grid-area: linha_3_2;
+}
+
+.loja_Raimundo{
+  grid-area: linha_3_3;
+}
+
+.Leg_lojas{
+ text-align: center;
+ margin: 10px;
+ padding: 15px;
+ font-size: 3rem;
+
+}
+
+.container{
+  width: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;  
+}
+
+.imagem-loja {
+  border-radius: 30px;
+}
+
+.button__loja{
+  color: blue; 
+}
+
+
 footer {
   background-color: white;
   font-family: "Times New Roman", Times, serif;
@@ -164,7 +232,10 @@ h5 {
   font-size: xx-large;
 }
 
-@media screen and (max-width: 760px) {
+
+@media screen and (max-width: 480px) {
+    /*celular*/
+  
   .menu {
     display: none;
   }
@@ -178,20 +249,109 @@ h5 {
     margin-right: 10px;
     margin-top: 10px;
   }
-  .Time {
+
+
+  .container-cards{ 
+    background-color: #b2ddecd5;
+    display: grid;
+    grid-template-rows: (20%, 40%, 40%);
+    grid-template-columns: repeat(2, 1fr);
+        
+    grid-template-areas:
+      "linha_1 linha_1"
+      "linha_2_1 linha_2_2"
+      "linha_2_3 linha_3_1 linha_3_2 linha_3_3";
+    }
+  
+  .Leg_lojas{ 
+    grid-area: linha_1;
+    }
+  
+  .loja_Dormentes{
+    grid-area: linha_2_1;
+  }
+  
+  .loja_Juazeiro{
+    grid-area: linha_2_2;
+  }
+  
+  .loja_Petrolina{
+    grid-area: linha_2_3;
+  }
+  
+  .loja_Picos{
+    grid-area: linha_3_1;
+  }
+  
+  .loja_Araripina{
+    grid-area: linha_3_2;
+  }
+  
+  .loja_Raimundo{
+    grid-area: linha_3_3;
+  }
+  
+  .Leg_lojas{
+   text-align: center;
+   margin: 10px;
+   padding: 15px;
+   font-size: 3rem;
+  
+  }
+  
+  .container{
+    width: auto;
+    padding: 15px;
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;  
+  }
+  
+  .imagem-loja {
+    border-radius: 30px;
+  }
+  
+  .button__loja{
+    color: blue; 
+  }
+  
+
+  .Time {
+    flex-direction: column;    
   }
 
-  .Aluno_contato {
-    font-size: 14px;
+  .Aluno_contato {    
+    font-size: 8px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
   }
 
   .desenvolvido {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .desenvolvido:hover {
-    font-size: 15px;
+    font-size: 8px; 
     text-transform: uppercase;
   }
+
+.container-cards{  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;    
+  text-align: center;  
+}
+
+.Leg_lojas{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgba(20, 20, 20, 0.699);
+}
 }
