@@ -13,6 +13,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -63,11 +64,13 @@ html {
 
 .banner2 {
   width: 100%;
-  height: 330px;
+  height: 90vh;
   background-image: url("/img/banner.jfif");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .informacoes {
