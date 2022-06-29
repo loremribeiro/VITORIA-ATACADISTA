@@ -95,6 +95,7 @@ html {
 .informacoes p {
   font-size: 0.9rem;
   line-height: 30px;
+  text-align: justify;
 }
 
 .icones_dormentes {
@@ -138,20 +139,18 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: flex-start;
 }
 
 .Aluno_contato {
   margin: 0;
   padding: 0;
-  text-align: start;
-  font-size: 16px;
+  text-align: center;
+  font-size: 1rem;
   color: var(--azul_escuro);
 }
 .Aluno_contato h3 {
-  margin: 1px;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 h3:hover {
@@ -160,15 +159,17 @@ h3:hover {
   font-size: x-large;
 }
 
-h5 {
-  margin: 5px 0 5px 0;
+.Aluno_contato h5 {
+  margin: 5px 3px 15px 0;
+  font-size: 0.9em;
+
   font-weight: bold;
 }
 .icones i {
   color: var(--azul_escuro);
-  margin: 0px 0 15px 0;
+  margin: 0;
   padding: 0;
-  font-size: 35px;
+  font-size: 2em;
   justify-content: space-between;
 }
 
@@ -195,7 +196,7 @@ h5 {
     height: 55px;
     list-style: none;
   }
- 
+
   .menu li a {
     text-decoration: none;
     color: var(--azul_escuro);
@@ -204,13 +205,13 @@ h5 {
     font-weight: bold;
     position: relative;
   }
-  
+
   nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
   }
-  
+
   .menu li a::after {
     content: "";
     height: 5px;
@@ -222,34 +223,32 @@ h5 {
     left: 0;
     right: 0;
   }
-  
+
   .menu li a:hover::after {
     width: 100%;
   }
 
   .btn {
     width: 100px;
-    box-shadow: -4px 6px 13px -6px rgba(0,0,0,0.61);
-   -webkit-box-shadow: -4px 6px 13px -6px rgba(0,0,0,0.61);
-   -moz-box-shadow: -4px 6px 13px -6px rgba(0,0,0,0.61);
-   cursor: pointer;
-   border: none;
-   text-transform: uppercase;
-  
+    box-shadow: -4px 6px 13px -6px rgba(0, 0, 0, 0.61);
+    -webkit-box-shadow: -4px 6px 13px -6px rgba(0, 0, 0, 0.61);
+    -moz-box-shadow: -4px 6px 13px -6px rgba(0, 0, 0, 0.61);
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
   }
-  
+
   .login {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
   }
-  
+
   .login img {
     width: 200px;
-  
   }
-  
+
   .form input {
     width: 300px;
     height: 30px;
@@ -259,7 +258,7 @@ h5 {
     padding-left: 5px;
     border: 1px solid black;
     outline: none;
-  }  
+  }
 
   #home {
     color: black;
@@ -278,20 +277,57 @@ h5 {
   .menu_hamburguer {
     display: none;
   }
+
   .Time {
+    margin: 0;
+    padding: 20px;
+    display: flex;
     flex-direction: row;
+    justify-content: space-around;
   }
 
   .Aluno_contato {
-    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--azul_escuro);
+  }
+  .Aluno_contato h3 {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  h3:hover {
+    color: black;
+    text-transform: uppercase;
+    font-size: x-large;
+  }
+
+  .Aluno_contato h5 {
+    margin: 5px 3px 15px 0;
+    font-size: 0.9em;
+
+    font-weight: bold;
+  }
+  .icones i {
+    color: var(--azul_escuro);
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    justify-content: space-between;
   }
 
   .desenvolvido {
-    font-size: 15px;
+    color: var(--azul_escuro);
+    flex-direction: flex;
+    text-align: center;
+    font-size: 1.5rem;
   }
 
   .desenvolvido:hover {
-    font-size: 2rem;
+    color: black;
     text-transform: uppercase;
+    font-size: xx-large;
   }
 }

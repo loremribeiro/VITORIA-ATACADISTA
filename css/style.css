@@ -94,7 +94,6 @@ nav ul {
  cursor: pointer;
  border: none;
  text-transform: uppercase;
-
 }
 
 .login {
@@ -106,7 +105,6 @@ nav ul {
 
 .login img {
   width: 200px;
-
 }
 
 .form input {
@@ -170,13 +168,13 @@ button {
   color: var(--br);
 }
 
-.container-cards {
+.container-cards { 
   margin: 30px;
+  gap: 250px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 170px;
 }
 
 .card {
@@ -307,13 +305,12 @@ footer {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-size: 15px;
+  font-size: 1rem;
   color: var(--azul_escuro);
 }
 .Aluno_contato h3 {
-  margin: 1px;
-  font-weight: bold;
-  font-size: 1.3rem;
+   font-weight: bold;
+  font-size: 1.2rem;
 }
 
 h3:hover {
@@ -322,15 +319,17 @@ h3:hover {
   font-size: x-large;
 }
 
-h5 {
-  margin: 5px 0 25px 0;
+.Aluno_contato h5 {
+  margin: 5px 3px 15px 0;
+  font-size: 0.9em;
+
   font-weight: bold;
 }
 .icones i {
   color: var(--azul_escuro);
   margin: 0;
   padding: 0;
-  font-size: 35px;
+  font-size: 2em;
   justify-content: space-between;
 }
 
@@ -364,98 +363,53 @@ h5 {
     margin-top: 10px;
   }
 
-  .container-cards {
-    background-color: #b2ddecd5;
-    display: grid;
-    grid-template-rows: (20%, 40%, 40%);
-    grid-template-columns: repeat(2, 1fr);
-
-    grid-template-areas:
-      "linha_1 linha_1"
-      "linha_2_1 linha_2_2"
-      "linha_2_3 linha_3_1 linha_3_2 linha_3_3";
+  .banner h1 {
+   padding: 20px;
   }
 
-  .Leg_lojas {
-    grid-area: linha_1;
+  .banner p {
+    padding: 20px;
+   }
+   
+  .container-cards{
+    gap: 100px;
   }
 
-  .loja_Dormentes {
-    grid-area: linha_2_1;
-  }
-
-  .loja_Juazeiro {
-    grid-area: linha_2_2;
-  }
-
-  .loja_Petrolina {
-    grid-area: linha_2_3;
-  }
-
-  .loja_Picos {
-    grid-area: linha_3_1;
-  }
-
-  .loja_Araripina {
-    grid-area: linha_3_2;
-  }
-
-  .loja_Raimundo {
-    grid-area: linha_3_3;
-  }
-
-  .Leg_lojas {
-    text-align: center;
-    margin: 10px;
-    padding: 15px;
-    font-size: 3rem;
-  }
-
-  .container {
-    width: auto;
-    padding: 15px;
-    display: flex;
+  .Time {   
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    font-size: 1em;
+    gap: 0;
   }
 
-  .imagem-loja {
-    border-radius: 30px;
-  }
-
-  .button__loja {
-    color: blue;
-  }
-
-  .Time {
+   .Aluno_contato {
     flex-direction: column;
   }
 
-  .Aluno_contato {
-    font-size: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  .Aluno_contato h3 {
+    font-size: 0.9rem;
+    margin-top: 15px;
+  }
+
+  .Aluno_contato h5 {
+    font-size: 0.7rem;
   }
 
   .desenvolvido {
-    font-size: 14px;
+    font-size: 0.7rem; 
   }
 
   .desenvolvido:hover {
-    font-size: 8px;
+    font-size: 0.7rem;
     text-transform: uppercase;
   }
+  
   .container-cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 100px;
   }
 
   .Leg_lojas {
@@ -465,3 +419,37 @@ h5 {
     color: rgba(20, 20, 20, 0.699);
   }
 }
+
+@media screen and (max-width: 768px) {
+  /*tables e grandes */
+
+  .menu {
+    display: none;
+  }
+
+  .menu_hamburguer {
+    background-color: var(--azul_escuro);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  .container-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 100px;
+  }
+  .Time {   
+    flex-direction: column;
+    font-size: 1em;
+    gap: 0;
+  }
+
+  
+}
+
