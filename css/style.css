@@ -51,12 +51,35 @@ html {
   list-style: none;
 }
 
-.menu a {
+.menu li a {
   text-decoration: none;
   color: var(--azul_escuro);
   padding: 10px;
   border-radius: 15px;
   font-weight: bold;
+  position: relative;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.menu li a::after {
+  content: "";
+  height: 5px;
+  background: var(--azul_claro);
+  position: absolute;
+  bottom: 0px;
+  width: 0%;
+  transition: ease-in 0.5s;
+  left: 0;
+  right: 0;
+}
+
+.menu li a:hover::after {
+  width: 100%;
 }
 
 #home {
