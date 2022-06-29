@@ -11,7 +11,6 @@
   --azul_claro: #00aff0;
   --azul_claro2: #8dd1ecc0;
   --br: white;
-  
 }
 
 html {
@@ -135,15 +134,16 @@ button {
   border: 1px solid var(--azul_claro);
   border-radius: 12px;
 }
-.Lojas{
+
+.Lojas {
   padding-bottom: 10px;
-  background-color:var(--azul_claro2);
+  background-color: var(--azul_claro2);
 }
 
-.Leg_lojas{
+.Leg_lojas {
   font-size: 3rem;
   text-align: center;
-  color:var(--br);
+  color: var(--br);
 }
 
 .container-cards {
@@ -155,7 +155,7 @@ button {
   gap: 170px;
 }
 
-.card{
+.card {
   width: 374px;
   height: 580px;
 
@@ -227,68 +227,18 @@ button {
   left: 115px;
   top: 130px;
 }
-.container-cards {
-  background-color: #b2ddecd5;
-  display: grid;
-  grid-template-rows: (20%, 40%, 40%);
-  grid-template-columns: repeat(3, 1fr);
 
-  grid-template-areas:
-    "linha_1 linha_1 linha_1"
-    "linha_2_1 linha_2_2 linha_2_3"
-    "linha_3_1 linha_3_2 linha_3_3";
-}
-
-.Leg_lojas {
-  grid-area: linha_1;
-}
-
-.loja_Dormentes {
-  grid-area: linha_2_1;
-}
-
-.loja_Juazeiro {
-  grid-area: linha_2_2;
-}
-
-.loja_Petrolina {
-  grid-area: linha_2_3;
-}
-
-.loja_Picos {
-  grid-area: linha_3_1;
-}
-
-.loja_Araripina {
-  grid-area: linha_3_2;
-}
-
-.loja_Raimundo {
-  grid-area: linha_3_3;
-}
-
-.Leg_lojas {
-  text-align: center;
-  margin: 10px;
-  padding: 15px;
-  font-size: 3rem;
-}
-
-.container {
-  width: auto;
-  padding: 15px;
+.card__content {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
   flex-grow: 1; /*inclui o flex-grow e removi o header*/
   margin-top: 50px;
-  flex-wrap: wrap;
-
 }
 
 .card__desc {
-  margin: 10px 20px;  
+  margin: 10px 20px;
   flex-grow: 1;
   text-align: center;
 }
@@ -313,10 +263,6 @@ button {
   color: #f3f3f3;
 
   margin: 15px;
-}
-
-.button__loja {
-  color: blue;
 }
 
 footer {
@@ -494,5 +440,4 @@ h5 {
     text-align: center;
     color: rgba(20, 20, 20, 0.699);
   }
-
 }
