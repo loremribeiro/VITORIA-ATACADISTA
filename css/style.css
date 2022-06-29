@@ -11,7 +11,6 @@
   --azul_claro: #00aff0;
   --azul_claro2: #8dd1ecc0;
   --br: white;
-  
 }
 
 html {
@@ -101,15 +100,15 @@ button {
   border: 1px solid var(--azul_claro);
   border-radius: 12px;
 }
-.Lojas{
+.Lojas {
   padding-bottom: 10px;
-  background-color:var(--azul_claro2);
+  background-color: var(--azul_claro2);
 }
 
-.Leg_lojas{
+.Leg_lojas {
   font-size: 3rem;
   text-align: center;
-  color:var(--br);
+  color: var(--br);
 }
 
 .container-cards {
@@ -121,7 +120,7 @@ button {
   gap: 170px;
 }
 
-.card{
+.card {
   width: 374px;
   height: 580px;
 
@@ -250,11 +249,10 @@ button {
   flex-grow: 1; /*inclui o flex-grow e removi o header*/
   margin-top: 50px;
   flex-wrap: wrap;
-
 }
 
 .card__desc {
-  margin: 10px 20px;  
+  margin: 10px 20px;
   flex-grow: 1;
   text-align: center;
 }
@@ -460,5 +458,4 @@ h5 {
     text-align: center;
     color: rgba(20, 20, 20, 0.699);
   }
-
 }
